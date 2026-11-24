@@ -1,4 +1,5 @@
-const API_URL = "http://127.0.0.1:14975/api";
+const API_URL =
+  import.meta.env.VITE_API_URL || "http://127.0.0.1:14975/api";
 
 export async function apiRequest(endpoint, options = {}) {
   const token = sessionStorage.getItem("token");

@@ -17,7 +17,8 @@ import Logo from "../components/Logo.jsx";
 import { FlagStripe, LogoLoader } from "../components/Brand.jsx";
 import { fmt } from "../documents/format.js";
 
-const API_URL = "http://127.0.0.1:14975/api";
+const API_URL =
+  import.meta.env.VITE_API_URL || "http://127.0.0.1:14975/api";
 
 /** Page publique de vérification des actes e-Naissance. */
 export default function Verify() {

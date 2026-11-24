@@ -3,7 +3,8 @@ import { createContext, useContext, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { allMenuItems } from "./data/menu.js";
 
-const API_URL = "http://127.0.0.1:14975/api";
+const API_URL =
+  import.meta.env.VITE_API_URL || "http://127.0.0.1:14975/api";
 
 export const ROLE_INFO = {
   admin: {
