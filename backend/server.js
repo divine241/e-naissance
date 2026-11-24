@@ -33,7 +33,9 @@ app.use(cors({
     "http://127.0.0.1:8081",
     "http://localhost:8081",
     "http://127.0.0.1:8831",
-    "http://localhost:8831"
+    "http://localhost:8831",
+    "https://e-naissance-frontend.onrender.com"
+    
   ],
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
