@@ -2672,9 +2672,9 @@ app.use((err, req, res, next) => {
 // 17. DÃ‰MARRAGE DU SERVEUR
 // ==========================================
 
-const server = app.listen(PORT, "127.0.0.1", () => {
-  console.log(
-    `Serveur e-Naissance dÃ©marrÃ© sur http://127.0.0.1:${PORT}`
+const server = app.listen(PORT, "0.0.0.0", () => { 
+ console.log(
+    `Serveur e-Naissance démarré sur le port ${PORT}`
   );
 });
 
