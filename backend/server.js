@@ -197,11 +197,12 @@ app.get("/api/test-db", async (req, res) => {
       database: result.rows[0].database,
       user: result.rows[0].user
     });
-  } catch (error) {
-    console.error("Erreur PostgreSQL :", error.message);
+   } catch (error) {
+    console.error("Erreur connexion :", error);
 
     res.status(500).json({
-      message: "Impossible de contacter la base de donnÃ©es."
+      message: "Une erreur est survenue pendant la connexion.",
+      diagnostic: error.code || error.name || "UNKNOWN"
     });
   }
 });
